@@ -1,0 +1,439 @@
+/* NAVIGATION TEXT LOGO */
+.navigation {
+  &__logo {
+    display: flex;
+    align-items: baseline;
+    &--1 {
+      font-size: 3.3rem;
+    }
+    &--2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__links {
+    padding: 1rem;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: inherit;
+
+    &:not(:last-of-type) {
+      padding: 1rem;
+    }
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+/* NAVIGATION SEARCH */
+.nav-search {
+  flex: 0 0 40%;
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-nav-transparent);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      color: var(--color-grey-dark-1);
+      background-color: var(--color-grey-light);
+    }
+
+    &::placeholder {
+      font-weight: 100;
+      color: #fff;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+/* HERO CTA SEARCH BAR */
+.hero-search {
+  width: 100%;
+  display: inline-flex;
+  padding: 2rem;
+  margin: 0.5rem;
+  backface-visibility: hidden;
+  animation: movesUp 1s ease-in;
+
+  &__input {
+    background-color: var(--color-transparent);
+    color: var(--color-grey-dark-2);
+    border: none;
+    font-size: 1.2rem;
+    width: 40rem;
+    max-width: 100%;
+    padding: 1.4rem 2rem;
+    border-radius: 10px 0 0 10px;
+    flex-grow: 1;
+    outline: none;
+
+    &:focus {
+      background: white;
+      color: black;
+    }
+
+    &::placeholder {
+      font-weight: 200;
+      color: var(--color-grey-dark-2);
+    }
+  }
+
+  &__button {
+    width: 8rem;
+    background: var(--color-blue);
+    color: white;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    user-select: none;
+
+    &:active {
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 0;
+    padding: 0;
+
+    &__input {
+      width: 30rem;
+      border-radius: 5px 0 0 5px;
+    }
+
+    &__button {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+
+/* DISCOVER CARDS */
+.discover-cards {
+  display: flex;
+  height: 65vh;
+  font-size: var(--section-text-size);
+  font-weight: 700;
+  color: #fff;
+
+  //all children (luxury & serenity cards)
+  & > * {
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__luxury {
+    width: 20vw;
+    background-image: url(/img/discover-image-2.jpg);
+    background-size: cover;
+    align-items: flex-end;
+  }
+
+  &__serenity {
+    width: 20vw;
+    background-image: url(/img/discover-image-1.jpg);
+    background-size: cover;
+    align-items: flex-start;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 65rem;
+    height: 50rem;
+
+    &__luxury,
+    &__serenity {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+    align-items: center;
+    width: 25rem;
+    height: 70rem;
+
+    &__luxury,
+    &__serenity {
+      width: 100%;
+      height: 30rem;
+      margin-block: 2rem;
+    }
+
+    &__serenity {
+      align-items: flex-end;
+    }
+  }
+}
+
+/* ISLAND CARD */
+.island-card {
+  height: 70vh;
+  width: 53vw;
+  background-image: url(/img/sunset-island-2.jpg);
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 35rem;
+    width: 70vw;
+  }
+}
+
+/* ACTIVITIES GALLERY */
+.activities-gallery {
+  margin-top: 5rem;
+  height: 80%;
+  width: 100%;
+  position: relative;
+
+  & > * {
+    width: 30vw;
+    text-align: center;
+    position: absolute;
+  }
+
+  &__beaches {
+    top: 3%;
+    left: 7%;
+
+    &--photo {
+      border-radius: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__waterfalls {
+    top: 17%;
+    left: 34%;
+    z-index: 3;
+
+    &--photo {
+      border-radius: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__conservation-centre {
+    top: 3%;
+    right: 8%;
+
+    &--photo {
+      border-radius: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+/* VACATION GALLERY */
+.vacation-gallery {
+  display: grid;
+  grid-template-rows: 50% 50% 50% 70%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2rem;
+
+  width: 70vw;
+  height: 60rem;
+  padding: 2rem;
+
+  &__photo {
+    &--1 {
+      background-image: url(/img/vacation-1.jpg);
+      background-size: cover;
+    }
+    &--2 {
+      background-image: url(/img/vacation-2.jpg);
+      background-size: cover;
+    }
+    &--3 {
+      background-image: url(/img/vacation-3.jpg);
+      background-size: cover;
+      grid-row: 2 / span 2;
+    }
+    &--4 {
+      background-image: url(/img/vacation-4.jpg);
+      background-size: cover;
+    }
+    &--5 {
+      background-image: url(/img/vacation-5.jpg);
+      background-size: cover;
+    }
+    &--6 {
+      background-image: url(/img/vacation-6.jpg);
+      background-size: cover;
+      grid-column: 1 / span 2;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 42rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 30rem;
+  }
+}
+
+/* SPONSORS LOGO */
+.sponsors__box {
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  width: 70%;
+
+  &--logo {
+    width: 12vw;
+    margin: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 30rem;
+    &--logo {
+      width: 10vw;
+    }
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    &--logo {
+      width: 14vw;
+    }
+  }
+}
+
+/* FOOTER ABOUT */
+.about {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 2rem;
+
+  &__heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__items {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  &__primary {
+    align-self: center;
+  }
+
+  &__primary-heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__group {
+    margin: 1rem;
+    & > * {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__destinations {
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+
+    &--list {
+      list-style: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-wrap: wrap;
+  }
+}
+
+/* FOOTER LOGO BOX */
+.footer__logo-box {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid;
+
+  &--logo {
+    display: flex;
+    align-items: baseline;
+    margin-top: 4rem;
+    &-1 {
+      font-size: 3.3rem;
+    }
+  }
+}
+
+/* FOOTER SOCIAL*/
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &--logo {
+    margin: 1rem;
+  }
+}
+
+/* FOOTER COPY RIGHTS */
+.footer__copy-right {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}

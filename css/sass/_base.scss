@@ -1,0 +1,61 @@
+:root {
+  /* COLORS */
+  --color-grey-light: #f0eeee;
+  --color-grey-light-2: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.56);
+
+  --color-blue: rgb(31, 147, 242);
+  --color-orange: orange;
+  --color-transparent: rgba(255, 255, 255, 0.525);
+  --color-nav-transparent: rgba(45, 45, 45, 0.142);
+
+  /* FONT SIZES */
+  --section-text-size: 2.5rem;
+
+  /* SECTION MARGIN */
+  --section-margin-block: 15rem;
+
+  /* ELEMENT MARGIN BOTTOM */
+  --heading-margin-bottom: 10rem;
+}
+
+/* MEDIA QUERY BP  */
+$bp-largest: 112.5em; //1800px
+$bp-large: 68.75em; //1200px
+$bp-medium: 61.875em; //990px
+// $bp-small: 50em; //800px or something for a smaller width
+$bp-small: 40.625em; //650px
+$bp-smaller: 31.25em; //500px
+$bp-smallest: 25.625em; //410px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px;
+
+  @media only screen and (min-width: $bp-largest) {
+    font-size: 75%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 56.25%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40.625%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}

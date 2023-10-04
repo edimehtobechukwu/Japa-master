@@ -1,0 +1,150 @@
+.header {
+  color: white;
+}
+
+/* HERO HEADING */
+.heading {
+  &__primary {
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--sub {
+      display: block;
+      font-size: 4rem;
+      font-weight: 400;
+
+      animation: moveInLeft 1s ease-out;
+    }
+
+    &--main {
+      display: block;
+      font-size: 7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      animation: moveInRight 1s ease-out;
+    }
+  }
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: var(--section-text-size);
+  padding: 2rem;
+  margin-bottom: var(--heading-margin-bottom);
+
+  &__primary {
+    &--2 {
+      display: block;
+    }
+
+    &--underline {
+      display: block;
+      border-bottom: 1rem solid var(--color-orange);
+      padding-bottom: 1rem;
+      width: 52%;
+    }
+
+    &--vacation {
+      border-bottom: 1rem solid var(--color-orange);
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__secondary {
+    text-align: center;
+    background-color: var(--color-orange);
+    color: #fff;
+    margin: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__primary {
+      &--2 {
+        display: inline;
+      }
+      &--underline {
+        display: inline;
+      }
+    }
+
+    &__secondary {
+      margin: 2rem 10rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__primary {
+      &--prices {
+        display: inline;
+        width: 22%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    &__primary {
+      &--2 {
+        display: block;
+      }
+      &--underline {
+        display: block;
+      }
+    }
+
+    &__secondary {
+      margin: 2rem;
+    }
+  }
+}
+
+/* SECTION DISCOVER FONT STYLE */
+.section__discover {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ISLAND CARD TEXT */
+.island-card__heading {
+  position: absolute;
+  right: 5rem;
+  bottom: 7rem;
+  text-transform: uppercase;
+  &--sub {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  &--main {
+    display: flex;
+    align-items: center;
+    &-1 {
+      color: var(--color-orange);
+      font-size: 9rem;
+    }
+
+    &-2 {
+      color: var(--color-orange);
+      font-size: 1.7rem;
+    }
+
+    &-3 {
+      display: block;
+    }
+  }
+}
+.island-card__booking-cta {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem 4rem;
+  cursor: pointer;
+
+  &--text {
+    font-size: 1.5rem;
+    color: var(--color-orange);
+  }
+}
+
+/* ACTIVITIES GALLERY TEXT */
+.activities-gallery__text {
+  font-size: 2.1rem;
+}

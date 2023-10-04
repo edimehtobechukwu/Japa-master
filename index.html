@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japa &mdash; Your all-in-one travel agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9d7bdce75a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-main">
+      <input
+        type="checkbox"
+        class="navigation-main__checkbox"
+        id="navi-toggle"
+      />
+
+      <label for="navi-toggle" class="navigation-main__button">
+        <span class="navigation-main__icon">&nbsp;</span>
+      </label>
+      <div class="navigation-main__background">&nbsp;</div>
+      <nav class="navigation-main__nav">
+        <div class="navigation-main__nav--links">
+          <a href="#" class="navigation-main__nav--item">Sign Up</a>
+          <a href="#" class="navigation-main__nav--item">Log In</a>
+          <a href="#footer" class="navigation-main__nav--item">About us</a>
+          <a href="#section__island" class="navigation-main__nav--item"
+            >islands</a
+          >
+          <a href="#section__vacations" class="navigation-main__nav--item"
+            >vacation gallery</a
+          >
+          <a href="#" class="navigation-main__nav--item">Blog</a>
+        </div>
+      </nav>
+    </div>
+    <header class="header">
+      <nav class="header__navigation">
+        <div class="navigation__logo">
+          <h1 class="navigation__logo--1">Japa</h1>
+          <span class="navigation__logo--2">.com</span>
+        </div>
+
+        <form action="#" class="nav-search">
+          <button class="nav-search__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input
+            type="text"
+            class="nav-search__input"
+            placeholder="Search destinations, Flight"
+          />
+        </form>
+
+        <div class="navigation__links">
+          <a href="#" class="navigation__item">Blog</a>
+          <a href="#" class="navigation__item">Sign Up</a>
+          <a href="#" class="navigation__item">Log In</a>
+        </div>
+      </nav>
+
+      <div class="header__text-box">
+        <h1 class="heading__primary">
+          <span class="heading__primary--sub">it's time for you to</span>
+          <span class="heading__primary--main">japa</span>
+        </h1>
+
+        <form action="#" class="hero-search">
+          <input
+            type="text"
+            class="hero-search__input"
+            placeholder="Destinations, Flight, Resorts"
+          />
+          <button class="hero-search__button">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="section__discover">
+        <div class="section-heading discover__header">
+          <h2 class="section-heading__secondary">Discover</h2>
+          <h2 class="section-heading__primary">
+            <span class="section-heading__primary--1">Exclusive Vacation</span>
+            <span class="section-heading__primary--underline">Locations</span>
+          </h2>
+        </div>
+        <div class="discover-cards">
+          <div class="discover-cards__luxury">
+            <h2 class="discover-cards__luxury--text">Luxury</h2>
+          </div>
+          <div class="discover-cards__serenity">
+            <h2 class="discover-cards__serenity--text">Serenity</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__island" id="section__island">
+        <div class="island-card">
+          <div class="island-card__heading">
+            <h2 class="island-card__heading--sub">up to</h2>
+            <div class="island-card__heading--main">
+              <h2 class="island-card__heading--main-1">70</h2>
+              <span class="island-card__heading--main-2"
+                >% <span class="island-card__heading--main-3">off</span></span
+              >
+            </div>
+            <div class="island-card__booking-cta">
+              <h2 class="island-card__booking-cta--text">Book now</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading island__header">
+          <h2 class="section-heading__primary">
+            <span class="section-heading__primary--1">Private islands</span
+            ><span class="section-heading__primary--2"> at incredible</span
+            ><span
+              class="section-heading__primary--underline section-heading__primary--prices"
+            >
+              prices</span
+            >
+          </h2>
+        </div>
+      </section>
+
+      <section class="section__activities">
+        <div class="section-heading">
+          <h2 class="section-heading__primary--underline">Activities</h2>
+        </div>
+
+        <div class="activities-gallery">
+          <div class="activities-gallery__beaches">
+            <img
+              class="activities-gallery__beaches--photo"
+              src="img/beaches.jpg"
+              alt="Beach image"
+            />
+            <h2 class="activities-gallery__text">Beaches</h2>
+          </div>
+
+          <div class="activities-gallery__waterfalls">
+            <img
+              class="activities-gallery__waterfalls--photo"
+              src="img/waterfalls.jpg"
+              alt="waterfalls"
+            />
+            <h2 class="activities-gallery__text">Waterfalls</h2>
+          </div>
+
+          <div class="activities-gallery__conservation-centre">
+            <img
+              class="activities-gallery__conservation-centre--photo"
+              src="img/conservation-photo.jpg"
+              alt="conservation image"
+            />
+            <h2 class="activities-gallery__text">Conservation Centres</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__vacations" id="section__vacations">
+        <div class="section-heading">
+          <h2 class="section-heading__primary">
+            <span class="section-heading__primary--vacation">Official </span
+            >Vacation Photos
+          </h2>
+        </div>
+
+        <div class="vacation-gallery">
+          <div class="vacation-gallery__photo vacation-gallery__photo--1">
+            1
+          </div>
+          <div class="vacation-gallery__photo vacation-gallery__photo--2">
+            2
+          </div>
+          <div class="vacation-gallery__photo vacation-gallery__photo--3">
+            3
+          </div>
+          <div class="vacation-gallery__photo vacation-gallery__photo--4">
+            4
+          </div>
+          <div class="vacation-gallery__photo vacation-gallery__photo--5">
+            5
+          </div>
+          <div class="vacation-gallery__photo vacation-gallery__photo--6">
+            6
+          </div>
+        </div>
+      </section>
+
+      <section class="section__sponsors">
+        <div class="section-heading">
+          <h2 class="section-heading__primary--underline">Sponsors</h2>
+        </div>
+
+        <div class="sponsors__box">
+          <img
+            src="img/sponsors/airbnb.svg"
+            alt="Airbnb logo"
+            class="sponsors__box--logo"
+          /><img
+            src="img/sponsors/mastercard.svg"
+            alt="mastercard"
+            class="sponsors__box--logo"
+          /><img
+            src="img/sponsors/qatar-airways.svg"
+            alt="Qatar Airways logo"
+            class="sponsors__box--logo"
+          /><img
+            src="img/sponsors/tripadvisor-logo.svg"
+            alt="Tripadvisor logo"
+            class="sponsors__box--logo"
+          /><img
+            src="img/sponsors/uber.svg"
+            alt="Uber logo"
+            class="sponsors__box--logo"
+          /><img
+            src="img/sponsors/airasia.svg"
+            alt="Air Asia logo"
+            class="sponsors__box--logo"
+          /><img
+            src="img/sponsors/expedia.svg"
+            alt="Expedia logo"
+            class="sponsors__box--logo"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="about">
+        <div class="about__primary">
+          <h3 class="about__primary-heading">About Japa</h3>
+          <div class="about__links">
+            <a href="#" class="about__items">About us</a
+            ><a href="#" class="about__items">We are hiring</a
+            ><a href="#" class="about__items">Terms & Condition</a
+            ><a href="#" class="about__items">Privacy policies</a
+            ><a href="#" class="about__items">Copyrights policies</a
+            ><a href="#" class="about__items">Support</a>
+          </div>
+        </div>
+
+        <div class="about__group">
+          <div class="about__group--supplies">
+            <h3 class="about__heading">For Supplies</h3>
+            <a href="#" class="about__items">List your activities</a>
+          </div>
+          <div class="about__group--brands">
+            <h3 class="about__heading">For Brands</h3>
+            <a href="#" class="about__items">Partner with us</a>
+          </div>
+          <div class="about__group--travel-agents">
+            <h3 class="about__heading">For travel agents</h3>
+            <a href="#" class="about__items">Sign up as an agent</a>
+            <a href="#" class="about__items">Agent login</a>
+          </div>
+        </div>
+
+        <div class="about__destinations">
+          <h3 class="about__heading">Travel Destinations</h3>
+          <ul class="about__destinations--list">
+            <li class="about__items">Dubai</li>
+            <li class="about__items">Maldives</li>
+            <li class="about__items">Singapore</li>
+            <li class="about__items">Thailand</li>
+            <li class="about__items">India</li>
+            <li class="about__items">Hong Kong</li>
+            <li class="about__items">Sri Lanka</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__logo-box">
+        <div class="footer__logo-box--logo">
+          <h1 class="footer__logo-box--logo-1">Japa</h1>
+          <span class="footer__logo-box--logo-2">.com</span>
+        </div>
+      </div>
+
+      <div class="footer__social">
+        <i class="footer__social--logo fa-brands fa-3x fa-facebook"></i>
+        <i class="footer__social--logo fa-brands fa-3x fa-twitter"></i>
+        <i class="footer__social--logo fa-brands fa-3x fa-instagram"></i>
+        <i class="footer__social--logo fa-brands fa-3x fa-linkedin"></i>
+      </div>
+
+      <div class="footer__copy-right">
+        <h4>&copy; 2022 Japa.com All rights reserved</h4>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
